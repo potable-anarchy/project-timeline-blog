@@ -1,9 +1,9 @@
 # Site settings
-title: "Project Timeline"
+title: "Brad Dougherty's Projects"
 email: your-email@example.com
-description: "A chronological journey through my projects and work"
+description: "A chronological timeline of my projects and work over the years"
 baseurl: ""
-url: ""
+url: "https://projects.brad-dougherty.com"
 
 # Build settings
 markdown: kramdown
@@ -12,7 +12,7 @@ minimal_mistakes_skin: "default"
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5
+paginate: 10
 paginate_path: /page:num/
 
 include:
@@ -28,8 +28,13 @@ plugins:
 
 # Author
 author:
-  name: "Your Name"
-  bio: "A timeline of projects and achievements."
+  name: "Brad Dougherty"
+  bio: "Building things over the years. This is a timeline of my projects and technical journey."
+  location: "United States"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/potable-anarchy"
 
 # Defaults
 defaults:
@@ -42,3 +47,5 @@ defaults:
       read_time: true
       share: true
       related: true
+      show_date: true
+EOF </dev/null

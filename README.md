@@ -1,93 +1,70 @@
-# Project Timeline Blog
+# Brad Dougherty's Project Timeline
 
-A minimal Minimal Mistakes Jekyll blog for showcasing your project timeline chronologically.
+A comprehensive portfolio showcasing all my projects over the years, built with Jekyll and the Minimal Mistakes theme.
 
-## Setup Instructions
+## About
 
-1. **Install Ruby and Bundler** (if not already installed):
-   ```bash
-   # On macOS with Homebrew
-   brew install ruby
-   gem install bundler
-   ```
+This site serves as a chronological timeline of my technical projects, experiments, and professional work. Each post represents a different project, documenting:
+- The problem it solved
+- Technologies used
+- Key features and innovations
+- Lessons learned
+- Impact and outcomes
 
-2. **Install Dependencies**:
-   ```bash
-   bundle install
-   ```
+## Structure
 
-3. **Serve Locally**:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. **View Your Site**:
-   Open http://localhost:4000 in your browser
+Projects are organized chronologically, with the most recent work appearing first. Each project post includes:
+- **Date**: When the project was completed or launched
+- **Categories**: The type of project (Web Development, AI/ML, Data Science, etc.)
+- **Tags**: Specific technologies and tools used
+- **Description**: Detailed writeup of the project
 
 ## Adding New Projects
 
-Create new markdown files in the `_posts` directory with the following naming convention:
-`YYYY-MM-DD-project-title.md`
+To add a new project to the timeline:
 
-### Post Template:
-```markdown
+1. Create a new markdown file in `_posts/` with the format: `YYYY-MM-DD-project-name.md`
+2. Include the following frontmatter:
+
+```yaml
 ---
-title: "Your Project Title"
+title: "Project Title"
 date: YYYY-MM-DD
 categories: [Category1, Category2]
-tags: [tag1, tag2, tag3]
-excerpt: "Brief description of your project"
+tags: [tech1, tech2, tech3]
+excerpt: "Brief one-line description of the project"
+header:
+  teaser: /assets/images/project-thumbnail.jpg  # optional
+---
+```
+
+3. Write your project description using markdown
+4. Commit and push to update the live site
+
+## Local Development
+
+```bash
+# Install dependencies
+bundle install
+
+# Run locally
+bundle exec jekyll serve
+
+# View at http://localhost:4000
+```
+
+## Live Site
+
+Visit the timeline at: https://projects.brad-dougherty.com
+
+## Technologies
+
+- Jekyll static site generator
+- Minimal Mistakes theme
+- GitHub Pages hosting
+- Cloudflare DNS
+
 ---
 
-## Project Description
-
-Your detailed project description goes here...
-
-### Key Features
-- Feature 1
-- Feature 2
-
-### Technologies Used
-- Technology 1
-- Technology 2
-
-### Results/Impact
-What was achieved with this project.
-```
-
-## Customization
-
-- Edit `_config.yml` to update site information
-- Modify the author section in `_config.yml` with your details
-- Add your bio photo to `/assets/images/bio-photo.jpg`
-- Customize the theme skin in `_config.yml` by changing `minimal_mistakes_skin`
-
-## Theme Skins Available
-- "default"
-- "air" 
-- "aqua"
-- "contrast"
-- "dark"
-- "dirt"
-- "neon"
-- "mint"
-- "plum"
-- "sunrise"
-
-## GitHub Pages Deployment
-
-1. Push your repository to GitHub
-2. Go to Settings > Pages
-3. Select "Deploy from a branch" and choose your main branch
-4. Your site will be available at `https://yourusername.github.io/repository-name`
-
-## File Structure
-```
-project-timeline-blog/
-├── _config.yml          # Site configuration
-├── _posts/              # Your project posts
-├── index.html           # Homepage
-├── Gemfile             # Ruby dependencies
-└── README.md           # This file
-```
+*This repository tracks my journey as a developer through the projects I've built over the years.*
 EOF </dev/null
