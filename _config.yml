@@ -42,4 +42,3 @@ defaults:
       read_time: true
       share: true
       related: true
-ENDFILE </dev/null
