@@ -48,4 +48,3 @@ defaults:
       share: true
       related: true
       show_date: true
-EOF </dev/null
