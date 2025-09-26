@@ -5,7 +5,7 @@ categories: [Open Source, SRE, Education]
 tags: [sre, documentation, best-practices, open-source, github, education, training]
 excerpt: "Created comprehensive open-source guide for organizations adopting SRE principles"
 status: "completed"
-external_url: "https://github.com/yourusername/sre-from-scratch"
+external_url: false
 ---
 
 ## SRE From Scratch
