@@ -1,20 +1,22 @@
 ---
-layout: nonenone
+layout: none
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brad Dougherty's Projects</title>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
-  <header class="masthead">
-    <div class="masthead__inner-wrap">
-      <a href="/" class="site-title">Brad Dougherty's Projects</a>
-    </div>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brad Dougherty's Projects</title>
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/main.css' | relative_url }}"
+        />
+    </head>
+    <body>
+        <header class="masthead">
+            <div class="masthead__inner-wrap">
+                <a href="/" class="site-title">Brad Dougherty's Projects</a>
             </div>
         </header>
 
@@ -26,23 +28,30 @@ layout: nonenone
                     <h2>{{ year.name }}</h2>
                     {% for post in year.items %}
                     <div class="project-item">
-                        <div class="project-date">
-                            {{ post.date | date: "%b %d" }}
+                        <div class="project-header">
+                            <div class="project-title">
+                                {% if post.external_url and post.external_url !=
+                                false %}
+                                <a
+                                    href="{{ post.external_url }}"
+                                    target="_blank"
+                                    >{{ post.title }} ↗</a
+                                >
+                                {% else %}
+                                <a href="{{ post.url | relative_url }}"
+                                    >{{ post.title }}</a
+                                >
+                                {% endif %}
+                            </div>
+                            <div class="project-date">
+                                {{ post.date | date: "%B %Y" }}
+                            </div>
                         </div>
-                        <div class="project-title">
-                            {% if post.external_url %}
-                            <a href="{{ post.external_url }}" target="_blank"
-                                >{{ post.title }}</a
-                            >
-                            {% else %}
-                            <a href="{{ post.url | relative_url }}"
-                                >{{ post.title }}</a
-                            >
-                            {% endif %}
-                        </div>
+
                         <div class="project-description">
                             {{ post.excerpt | strip_html | truncate: 200 }}
                         </div>
+
                         <div class="project-meta">
                             {% if post.revenue %}
                             <span class="revenue">{{ post.revenue }}</span>
@@ -67,11 +76,9 @@ layout: nonenone
         </main>
 
         <footer class="page__footer">
-            <div style="text-align: center">
-                <p>
-                    &copy; {{ 'now' | date: '%Y' }} Brad Dougherty. Building
-                    things over the years.
-                </p>
+            <div>
+                <p>&copy; {{ 'now' | date: '%Y' }} Brad Dougherty</p>
+                <p>Building things over the years.</p>
                 <p>
                     <a href="https://github.com/potable-anarchy" target="_blank"
                         >GitHub</a
@@ -80,59 +87,4 @@ layout: nonenone
             </div>
         </footer>
     </body>
-</html>  <main class="page__content">
-    <div class="projects-timeline">
-      {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-      {% for year in postsByYear %}
-        <div class="year-section">
-          <h2>{{ year.name }}</h2>
-          {% for post in year.items %}
-            <div class="project-item">
-              <div class="project-header">
-                <div class="project-title">
-                  {% if post.external_url and post.external_url != false %}
-                    <a href="{{ post.external_url }}" target="_blank">{{ post.title }} ↗</a>
-                  {% else %}
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                  {% endif %}
-                </div>
-                <div class="project-date">{{ post.date | date: "%B %Y" }}</div>
-              </div>
-
-              <div class="project-description">
-                {{ post.excerpt | strip_html | truncate: 200 }}
-              </div>
-
-              <div class="project-meta">
-                {% if post.revenue %}
-                  <span class="revenue">{{ post.revenue }}</span>
-                {% endif %}
-                {% if post.status %}
-                  <span class="status {% if post.status == 'active' %}active{% endif %}">{{ post.status }}</span>
-                {% endif %}
-                {% if post.tags %}
-                  <div class="tags">
-                    {% for tag in post.tags limit:5 %}
-                      <span>{{ tag }}</span>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      {% endfor %}
-    </div>
-  </main>
-
-  <footer class="page__footer">
-    <div>
-      <p>&copy; {{ 'now' | date: '%Y' }} Brad Dougherty</p>
-      <p>Building things over the years.</p>
-      <p>
-        <a href="https://github.com/potable-anarchy" target="_blank">GitHub</a>
-      </p>
-    </div>
-  </footer>
-</body>
 </html>
