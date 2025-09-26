@@ -29,18 +29,31 @@ layout: none
                     {% for post in year.items %}
                     <div class="project-item">
                         <div class="project-header">
-                            <div class="project-title">
+                            <div class="project-title-section">
+                                <div class="project-title">
+                                    {% if post.external_url and
+                                    post.external_url != false %}
+                                    <a
+                                        href="{{ post.external_url }}"
+                                        target="_blank"
+                                        >{{ post.title }} ↗</a
+                                    >
+                                    {% else %}
+                                    <a href="{{ post.url | relative_url }}"
+                                        >{{ post.title }}</a
+                                    >
+                                    {% endif %}
+                                </div>
                                 {% if post.external_url and post.external_url !=
                                 false %}
-                                <a
-                                    href="{{ post.external_url }}"
-                                    target="_blank"
-                                    >{{ post.title }} ↗</a
-                                >
-                                {% else %}
-                                <a href="{{ post.url | relative_url }}"
-                                    >{{ post.title }}</a
-                                >
+                                <div class="project-url">
+                                    <a
+                                        href="{{ post.external_url }}"
+                                        target="_blank"
+                                        >{{ post.external_url | remove:
+                                        "https://" | remove: "http://" }}</a
+                                    >
+                                </div>
                                 {% endif %}
                             </div>
                             <div class="project-date">

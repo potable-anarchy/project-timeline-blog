@@ -100,6 +100,10 @@ html, body {
       gap: 1em;
     }
 
+    .project-title-section {
+      flex: 1;
+    }
+
     .project-date {
       color: var(--text-muted);
       font-size: 0.9em;
@@ -108,8 +112,7 @@ html, body {
 
     .project-title {
       font-size: 1.3em;
-      margin-bottom: 0.5em;
-      flex: 1;
+      margin-bottom: 0.2em;
 
       a {
         color: var(--link-color);
@@ -118,6 +121,22 @@ html, body {
 
         &:hover {
           opacity: 0.8;
+        }
+      }
+    }
+
+    .project-url {
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+
+      a {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-family: monospace;
+
+        &:hover {
+          color: var(--link-color);
+          text-decoration: underline;
         }
       }
     }
