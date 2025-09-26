@@ -1,16 +1,16 @@
 ---
-title: "Zed Gaming Themes"
+title: "Zed Editor Themes"
 date: 2024-08-08
 categories: [Open Source, Developer Tools]
 tags: [zed-editor, themes, ui-design, developer-tools, gaming, retro, customization]
-excerpt: "Gaming-inspired theme collection for Zed editor featuring red aesthetics and nostalgic game palettes"
+excerpt: "Custom theme collection for Zed editor featuring red aesthetics and nostalgic game palettes. Themes include [zed-red](https://github.com/potable-anarchy/zed-red), [zed-red-icons](https://github.com/potable-anarchy/zed-red-icons), [super-mario-world-zed-theme](https://github.com/potable-anarchy/super-mario-world-zed-theme), and [zed-kirby](https://github.com/potable-anarchy/zed-kirby)."
 status: "completed"
 external_url: false
 ---
 
-## Zed Gaming Themes
+## Zed Editor Themes
 
-Created a collection of gaming and red-themed designs for the Zed code editor, bringing personality and nostalgia to the coding experience.
+Created a collection of custom themes for the Zed code editor, featuring red aesthetics and gaming-inspired designs that bring personality and nostalgia to the coding experience.
 
 ### GitHub Repositories
 
