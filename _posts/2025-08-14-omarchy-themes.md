@@ -1,6 +1,6 @@
 ---
 title: "Omarchy Theme Series"
-date: 2024-08-14
+date: 2025-08-14
 categories: [Open Source, Developer Tools]
 tags: [zed-editor, themes, ui-design, developer-tools, dark-themes, customization]
 excerpt: "Distinctive dark theme collection for Zed editor featuring demonic, poolside, and Quake-inspired aesthetics. Themes include [omarchy-demonic-theme](https://github.com/potable-anarchy/omarchy-demonic-theme), [omarchy-poolside-theme](https://github.com/potable-anarchy/omarchy-poolside-theme), and [omarchy-quake-theme](https://github.com/potable-anarchy/omarchy-quake-theme)."
