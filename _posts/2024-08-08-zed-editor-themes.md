@@ -5,12 +5,22 @@ categories: [Open Source, Developer Tools]
 tags: [zed-editor, themes, ui-design, developer-tools, customization, rust]
 excerpt: "Collection of custom themes for Zed editor including ominous red, retro gaming, and unique visual styles"
 status: "completed"
-external_url: "https://github.com/potable-anarchy/zed-red"
+external_url: false
 ---
 
 ## Zed Editor Theme Collection
 
 Created a collection of distinctive themes for the Zed code editor, offering unique visual experiences from ominous red aesthetics to nostalgic gaming-inspired palettes.
+
+### GitHub Repositories
+
+- **[zed-red](https://github.com/potable-anarchy/zed-red)** - Ominous red theme with crimson text on black
+- **[zed-red-icons](https://github.com/potable-anarchy/zed-red-icons)** - Red-tinted icon theme
+- **[super-mario-world-zed-theme](https://github.com/potable-anarchy/super-mario-world-zed-theme)** - Super Mario World inspired colors
+- **[zed-kirby](https://github.com/potable-anarchy/zed-kirby)** - Kirby Dream Land theme
+- **[omarchy-demonic-theme](https://github.com/potable-anarchy/omarchy-demonic-theme)** - Dark demonic aesthetic
+- **[omarchy-poolside-theme](https://github.com/potable-anarchy/omarchy-poolside-theme)** - Relaxed poolside vibes
+- **[omarchy-quake-theme](https://github.com/potable-anarchy/omarchy-quake-theme)** - Quake-inspired industrial palette
 
 ### Theme Collection
 
