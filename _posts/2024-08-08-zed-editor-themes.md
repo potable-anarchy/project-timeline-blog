@@ -1,16 +1,16 @@
 ---
-title: "Zed Editor Theme Collection"
+title: "Zed Gaming Themes"
 date: 2024-08-08
 categories: [Open Source, Developer Tools]
-tags: [zed-editor, themes, ui-design, developer-tools, customization, rust]
-excerpt: "Collection of custom themes for Zed editor including ominous red, retro gaming, and unique visual styles"
+tags: [zed-editor, themes, ui-design, developer-tools, gaming, retro, customization]
+excerpt: "Gaming-inspired theme collection for Zed editor featuring red aesthetics and nostalgic game palettes"
 status: "completed"
 external_url: false
 ---
 
-## Zed Editor Theme Collection
+## Zed Gaming Themes
 
-Created a collection of distinctive themes for the Zed code editor, offering unique visual experiences from ominous red aesthetics to nostalgic gaming-inspired palettes.
+Created a collection of gaming and red-themed designs for the Zed code editor, bringing personality and nostalgia to the coding experience.
 
 ### GitHub Repositories
 
@@ -18,9 +18,6 @@ Created a collection of distinctive themes for the Zed code editor, offering uni
 - **[zed-red-icons](https://github.com/potable-anarchy/zed-red-icons)** - Red-tinted icon theme
 - **[super-mario-world-zed-theme](https://github.com/potable-anarchy/super-mario-world-zed-theme)** - Super Mario World inspired colors
 - **[zed-kirby](https://github.com/potable-anarchy/zed-kirby)** - Kirby Dream Land theme
-- **[omarchy-demonic-theme](https://github.com/potable-anarchy/omarchy-demonic-theme)** - Dark demonic aesthetic
-- **[omarchy-poolside-theme](https://github.com/potable-anarchy/omarchy-poolside-theme)** - Relaxed poolside vibes
-- **[omarchy-quake-theme](https://github.com/potable-anarchy/omarchy-quake-theme)** - Quake-inspired industrial palette
 
 ### Theme Collection
 
@@ -44,25 +41,7 @@ Created a collection of distinctive themes for the Zed code editor, offering uni
 - Dream Land-inspired palette
 - Comfortable for extended coding sessions
 
-#### Omarchy Theme Series
 
-**Demonic Theme**
-- Dark, intense color scheme
-- Fiery accents and highlights
-- Gothic-inspired design elements
-- Perfect for hardcore coding sessions
-
-**Poolside Theme**
-- Relaxed, summer-inspired colors
-- Cool blues and warm sunset tones
-- Vacation vibes for coding
-- Calming visual experience
-
-**Quake Theme**
-- Brown and orange industrial palette
-- 90s FPS game aesthetic
-- Gritty, retro gaming feel
-- Nostalgic for classic PC gamers
 
 ### Design Philosophy
 
