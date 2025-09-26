@@ -62,7 +62,8 @@ layout: none
                         </div>
 
                         <div class="project-description">
-                            {{ post.excerpt | strip_html | truncate: 200 }}
+                            {{ post.excerpt | markdownify | strip_html |
+                            truncate: 200 }}
                         </div>
 
                         <div class="project-meta">
