@@ -1,9 +1,11 @@
 ---
-title: "SRE Team Lead at Box Inc."
+title: "Box - SRE Team Lead"
 date: 2021-06-01
 categories: [Leadership, SRE, Cloud Storage]
 tags: [sre, python, bash, grafana, datadog, jira, automation, mentorship]
 excerpt: "Led SRE team reducing support tickets by 90% and establishing robust monitoring systems"
+status: "completed"
+external_url: false
 ---
 
 ## SRE Team Lead - Box Inc.

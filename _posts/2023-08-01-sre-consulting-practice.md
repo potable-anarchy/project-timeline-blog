@@ -4,6 +4,8 @@ date: 2023-08-01
 categories: [Consulting, SRE, DevOps]
 tags: [sre, consulting, fintech, healthcare, ecommerce, monitoring, incident-response, training]
 excerpt: "Establishing independent SRE consulting practice serving fintech, healthcare, and e-commerce sectors"
+status: "active"
+external_url: false
 ---
 
 ## Site Reliability Engineering Consulting

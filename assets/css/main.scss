@@ -1,0 +1,179 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Import Minimal Mistakes styles
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Custom styles inspired by levels.io
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --text-muted: #999;
+  --link-color: #fff;
+  --border-color: #333;
+  --accent-color: #00ff00;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.masthead {
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+
+  .masthead__inner-wrap {
+    padding: 1em;
+  }
+
+  .site-title {
+    color: var(--link-color);
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+}
+
+.page__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+// Projects timeline styles
+.projects-timeline {
+  .year-section {
+    margin-bottom: 4em;
+
+    h2 {
+      color: var(--text-muted);
+      font-size: 1.2em;
+      font-weight: 400;
+      margin-bottom: 2em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid var(--border-color);
+    }
+  }
+
+  .project-item {
+    margin-bottom: 3em;
+    padding-left: 120px;
+    position: relative;
+
+    .project-date {
+      position: absolute;
+      left: 0;
+      color: var(--text-muted);
+      font-size: 0.9em;
+      width: 100px;
+    }
+
+    .project-title {
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .project-description {
+      color: var(--text-color);
+      opacity: 0.8;
+      line-height: 1.5;
+    }
+
+    .project-meta {
+      margin-top: 0.5em;
+
+      .revenue {
+        color: var(--accent-color);
+        font-weight: 600;
+      }
+
+      .status {
+        color: var(--text-muted);
+        font-size: 0.9em;
+
+        &.active {
+          color: var(--accent-color);
+        }
+      }
+
+      .tags {
+        margin-top: 0.5em;
+
+        span {
+          background: var(--border-color);
+          padding: 2px 8px;
+          border-radius: 3px;
+          font-size: 0.85em;
+          margin-right: 0.5em;
+          color: var(--text-muted);
+        }
+      }
+    }
+  }
+}
+
+// Hide sidebar for cleaner look
+.sidebar {
+  display: none;
+}
+
+// Adjust main content width
+.page {
+  width: 100%;
+
+  @include breakpoint($large) {
+    width: 100%;
+  }
+}
+
+// Override link colors
+a {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-color);
+    opacity: 0.8;
+  }
+}
+
+// Simple footer
+.page__footer {
+  background: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  margin-top: 4em;
+  padding: 2em 0;
+
+  a {
+    color: var(--text-muted);
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .project-item {
+    padding-left: 0;
+
+    .project-date {
+      position: static;
+      margin-bottom: 0.5em;
+      width: auto;
+    }
+  }
+}

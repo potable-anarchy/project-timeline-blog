@@ -1,9 +1,11 @@
 ---
-title: "Manager of Site Reliability Engineering at Upstart"
+title: "Upstart - SRE Manager"
 date: 2023-03-01
 categories: [Leadership, SRE, FinTech]
 tags: [management, sre, kubernetes, terraform, datadog, github-actions, redshift, fintech]
 excerpt: "Led 9-person SRE team maintaining 99.99% uptime for critical fintech infrastructure"
+status: "completed"
+external_url: false
 ---
 
 ## SRE Manager - Upstart Inc.

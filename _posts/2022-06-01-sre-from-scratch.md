@@ -1,9 +1,11 @@
 ---
-title: "SRE From Scratch: Open Source Guide"
+title: "SRE From Scratch"
 date: 2022-06-01
 categories: [Open Source, SRE, Education]
 tags: [sre, documentation, best-practices, open-source, github, education, training]
 excerpt: "Created comprehensive open-source guide for organizations adopting SRE principles"
+status: "completed"
+external_url: "https://github.com/yourusername/sre-from-scratch"
 ---
 
 ## SRE From Scratch

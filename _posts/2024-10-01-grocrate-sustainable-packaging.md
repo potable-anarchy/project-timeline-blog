@@ -1,9 +1,11 @@
 ---
-title: "GroCrate: Eco-Friendly Packaging Innovation"
+title: "GroCrate"
 date: 2024-10-01
 categories: [Startup, Sustainability]
 tags: [sustainable-packaging, eco-friendly, product-development, innovation]
 excerpt: "Developing sustainable packaging solutions for the modern supply chain"
+status: "active"
+external_url: false
 ---
 
 ## GroCrate: Sustainable Packaging Solution

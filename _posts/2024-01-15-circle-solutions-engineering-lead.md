@@ -1,9 +1,11 @@
 ---
-title: "Engineering Lead at Circle Solutions LLC"
+title: "Circle Solutions"
 date: 2024-01-15
 categories: [Engineering Leadership, Integration]
 tags: [ruby, postgresql, aws, python, ci-cd, github-actions, integration, analytics]
 excerpt: "Leading engineering efforts for multi-platform integration and analytics systems"
+status: "completed"
+external_url: false
 ---
 
 ## Engineering Lead - Circle Solutions LLC
