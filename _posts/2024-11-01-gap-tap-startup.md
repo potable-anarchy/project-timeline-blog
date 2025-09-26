@@ -6,7 +6,7 @@ tags: [entrepreneurship, product-development, strategy, revenue-generation]
 excerpt: "Building and scaling a startup to $250K annual revenue through product development and strategic positioning"
 revenue: "$250K/year"
 status: "active"
-external_url: false
+external_url: "https://gap-tap.com"
 ---
 
 ## Gap-Tap Startup
