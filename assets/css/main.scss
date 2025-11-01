@@ -84,11 +84,89 @@ html, body {
     margin-bottom: 2em;
     box-shadow: var(--card-shadow);
     transition: all 0.3s ease;
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
 
     &:hover {
       border-color: #333;
       transform: translateY(-2px);
       box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    }
+
+    // Alternating layout
+    &.left-image {
+      flex-direction: row;
+
+      .project-gallery {
+        order: 1;
+      }
+
+      .project-content {
+        order: 2;
+      }
+    }
+
+    &.right-image {
+      flex-direction: row;
+
+      .project-gallery {
+        order: 2;
+      }
+
+      .project-content {
+        order: 1;
+      }
+    }
+
+    .project-gallery {
+      flex-shrink: 0;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      position: relative;
+
+      .gallery-thumbnail {
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 6px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-color: var(--link-color);
+          transform: scale(1.02);
+          box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .gallery-more {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        background: rgba(0,0,0,0.8);
+        color: var(--link-color);
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 600;
+        border: 1px solid var(--border-color);
+      }
+    }
+
+    .project-content {
+      flex: 1;
+      min-width: 0;
     }
 
     .project-header {
@@ -245,6 +323,99 @@ a {
   }
 }
 
+// Gallery Modal
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow: hidden;
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-modal-image {
+    max-width: 100%;
+    max-height: 85vh;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  }
+
+  .gallery-close {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    color: var(--link-color);
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    z-index: 10000;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .gallery-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.1);
+    color: var(--link-color);
+    border: 1px solid var(--border-color);
+    font-size: 30px;
+    padding: 16px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    z-index: 10000;
+
+    &:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    &.gallery-prev {
+      left: 20px;
+    }
+
+    &.gallery-next {
+      right: 20px;
+    }
+  }
+
+  .gallery-caption {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-color);
+    background: rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
 // Mobile responsive
 @media (max-width: 768px) {
   .page__content {
@@ -253,6 +424,22 @@ a {
 
   .project-item {
     padding: 1.5em;
+    flex-direction: column !important;
+
+    .project-gallery {
+      width: 100%;
+      order: 1 !important;
+      flex-direction: row;
+      margin-bottom: 1em;
+
+      .gallery-thumbnail {
+        width: calc(33.333% - 0.33em);
+      }
+    }
+
+    .project-content {
+      order: 2 !important;
+    }
 
     .project-header {
       flex-direction: column;
@@ -269,6 +456,33 @@ a {
 
     .site-title {
       font-size: 1.5em;
+    }
+  }
+
+  .gallery-modal {
+    .gallery-close {
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+    }
+
+    .gallery-nav {
+      font-size: 24px;
+      padding: 12px 16px;
+
+      &.gallery-prev {
+        left: 10px;
+      }
+
+      &.gallery-next {
+        right: 10px;
+      }
+    }
+
+    .gallery-caption {
+      bottom: 10px;
+      font-size: 0.9em;
+      max-width: 90%;
     }
   }
 }
