@@ -4,14 +4,13 @@ date: 2024-11-01
 categories: [Startup, Business]
 tags: [entrepreneurship, product-development, strategy, revenue-generation]
 excerpt: "Building and scaling a startup to $250K annual revenue through product development and strategic positioning"
-revenue: "$250K/year"
 status: "active"
 external_url: "https://gap-tap.com"
 ---
 
 ## Gap-Tap Startup
 
-Currently generating **$250K in annual revenue**, Gap-Tap represents a successful venture in identifying market gaps and delivering targeted solutions.
+Gap-Tap represents a successful venture in identifying market gaps and delivering targeted solutions.
 
 ### My Role
 As co-founder, I'm responsible for:
