@@ -4,6 +4,7 @@ date: 2025-07-23
 categories: [Web Development]
 tags: [javascript, vercel, reddit-api, web-app]
 excerpt: "Auto-scrolling image viewer for Reddit subreddits with lean-back browsing experience"
+external_url: "https://redditscroller.brad-dougherty.com"
 ---
 
 ## Reddit Scroller: Auto-Scrolling Image Viewer
